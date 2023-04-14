@@ -1,10 +1,10 @@
-package org.example.sem1.Homework.model;
+package org.example.sem3.homework;
 
-import org.example.sem1.Homework.model.Product;
 
-public class HotDrinks extends Product {
+
+public class HotDrinks1 extends Product1 {
     private Integer temperature;
-    public HotDrinks(Integer name, Integer volume) {
+    public HotDrinks1(String name, Double volume) {
         super(name, volume);
     }
     public Integer getTemperature() {
@@ -15,7 +15,7 @@ public class HotDrinks extends Product {
         this.temperature = temperature;
     }
 
-    public HotDrinks(Integer name, Integer volume, Integer temperature) {
+    public HotDrinks1(String name, Double volume, Integer temperature) {
         super(name, volume);
         this.temperature = temperature;
     }
@@ -24,11 +24,11 @@ public class HotDrinks extends Product {
         if (this == o) {
             return true;
         }
-        if (!(o instanceof HotDrinks)) {
+        if (!(o instanceof HotDrinks1)) {
             return false;
         }
 
-        HotDrinks that = (HotDrinks) o;
+        HotDrinks1 that = (HotDrinks1) o;
 
         return super.getName().equals(that.getName())
                 && super.getVolume() == that.getVolume()
