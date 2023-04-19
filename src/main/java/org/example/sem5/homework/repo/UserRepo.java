@@ -25,4 +25,15 @@ public class UserRepo {
         return null;
     }
 
+    public void addBalance(User user, double amount){
+        user.setBalance(amount);
+    }
+    public void subBalance(User user, double amount){
+        user.setBalance(user.getBalance() - amount);
+    }
+
+    public double getBalance(User user) {
+        return user.getBalance();
+    }
 }
+

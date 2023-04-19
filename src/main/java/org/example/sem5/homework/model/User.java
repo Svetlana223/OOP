@@ -51,6 +51,8 @@ public class User {
     public void setBalance(Double balance) {
         this.balance = balance;
     }
+    public void addBalance(Double amount){ this.balance += amount;}
+    public void subBalace(Double amount){ this.balance -= amount;}
     @Override
     public String toString() {
         return "User{" +
