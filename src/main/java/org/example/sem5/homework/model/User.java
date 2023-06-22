@@ -14,6 +14,7 @@ public class User {
     }
 
     public User(String name, String lastName, Integer age) {
+        
         this.name = name;
         this.lastName = lastName;
         this.age = age;
@@ -52,7 +53,7 @@ public class User {
         this.balance = balance;
     }
     public void addBalance(Double amount){ this.balance += amount;}
-    public void subBalace(Double amount){ this.balance -= amount;}
+    public void subBalance(Double amount){ this.balance -= amount;}
     @Override
     public String toString() {
         return "User{" +
